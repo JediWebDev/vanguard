@@ -20,112 +20,141 @@
 
 <body>
     <!-- WRAP CONTENT IN VALIDATED, SEMANTIC HTML5 (SEE HINTS FOLDER LINKED TO IN THE CANVAS INSTRUCTIONS)-->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#hero" aria-label="Vanguard home">Vanguard</a>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open main menu">
-      <label class="hamburger" for="nav-toggle" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
-          <rect x="3" y="6" width="18" height="2" rx="1"></rect>
-          <rect x="3" y="11" width="18" height="2" rx="1"></rect>
-          <rect x="3" y="16" width="18" height="2" rx="1"></rect>
-        </svg>
-      </label>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#hero" aria-label="Vanguard home">Vanguard</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open main menu">
+            <label class="hamburger" for="nav-toggle" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                    <rect x="3" y="6" width="18" height="2" rx="1"></rect>
+                    <rect x="3" y="11" width="18" height="2" rx="1"></rect>
+                    <rect x="3" y="16" width="18" height="2" rx="1"></rect>
+                </svg>
+            </label>
 
-      <nav class="main-nav" aria-label="Main Navigation">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 
-    Innovation & Investment
-    We empower businesses to lead the future with high-impact strategies, market intelligence, and financial solutions
-    that drive success.
-    Request a Consultation
+    <main id="content">
+        <!-- HERO -->
+        <section id="hero" class="hero">
+            <div class="container hero-card">
+                <h1>Innovation &amp; Investment</h1>
+                <p>We empower businesses to lead the future with high-impact strategies, market intelligence, and
+                    financial solutions that drive success.</p>
+                <a class="btn" href="#contact">Request a Consultation</a>
+            </div>
+        </section>
 
-    Our Expertise. Your Edge.
-    We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield investment strategies to
-    propel businesses forward. Whether you're looking to scale, optimize, or dominate, our strategic expertise delivers
-    results.'
+        <section id="about" class="about section-pad">
+            <div class="container">
+                <h2>Our Expertise. Your Edge.</h2>
+                <p>We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield investment
+                    strategies to propel businesses forward. Whether you're looking to scale, optimize, or dominate, our
+                    strategic expertise delivers results.</p>
+            </div>
+        </section>
+        <section id="services" class="services section-pad">
+            <div class="container">
+                <h2>What We Offer</h2>
 
-    What We Offer
-    Strategic Growth Consulting
-    Unlock new revenue streams and optimize market expansion strategies.
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Strategic Growth Consulting</h3>
+                        <p>Unlock new revenue streams and optimize market expansion strategies.</p>
+                    </article>
 
-    High-Impact Investment Solutions
-    Maximize returns with data-driven portfolio management.
+                    <article class="card">
+                        <h3>High-Impact Investment Solutions</h3>
+                        <p>Maximize returns with data-driven portfolio management.</p>
+                    </article>
 
-    Business Acceleration & Mergers
-    Identify opportunities for rapid growth and high-value acquisitions.
+                    <article class="card">
+                        <h3>Business Acceleration &amp; Mergers</h3>
+                        <p>Identify opportunities for rapid growth and high-value acquisitions.</p>
+                    </article>
 
-    Digital Transformation
-    Stay at the forefront of industry advancements with AI, blockchain, and automation.
+                    <article class="card">
+                        <h3>Digital Transformation</h3>
+                        <p>Stay at the forefront with AI, blockchain, and automation.</p>
+                    </article>
 
-    Exclusive Executive Advisory Services
-    Personalized insights and leadership support for C-suite executives and high-net-worth investors.
+                    <article class="card">
+                        <h3>Exclusive Executive Advisory Services</h3>
+                        <p>Personalized insights and leadership support for C-suite executives and high-net-worth
+                            investors.</p>
+                    </article>
 
-    Corporate Innovation
-    Strategic implementation of new ideas, technologies, and processes to drive business growth, enhance competitive
-    advantage, and adapt to evolving market demands.
+                    <article class="card">
+                        <h3>Corporate Innovation</h3>
+                        <p>Implement new ideas, technologies, and processes to drive growth and adapt to evolving market
+                            demands.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    Proven Results
-    Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.
+        Proven Results
+        Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.
 
-    Profits
-    Year
-    Revenue ($M)
-    Growth (%)
+        Profits
+        Year
+        Revenue ($M)
+        Growth (%)
 
-    2020
-    $120M
-    30%
+        2020
+        $120M
+        30%
 
-    2021
-    $180M
-    50%
+        2021
+        $180M
+        50%
 
-    2022
-    $250M
-    70%
+        2022
+        $250M
+        70%
 
-    2023
-    $340M
-    85%
+        2023
+        $340M
+        85%
 
-    2024
-    $420M
-    100%
+        2024
+        $420M
+        100%
 
-    Growth
-    <!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML-->
-    <div id="bar-chart">
-        <div class="bar" data-year="2020" style="--height: 30%;"></div>
-        <div class="bar" data-year="2021" style="--height: 50%;"></div>
-        <div class="bar" data-year="2022" style="--height: 70%;"></div>
-        <div class="bar" data-year="2023" style="--height: 85%;"></div>
-        <div class="bar" data-year="2024" style="--height: 100%;"></div>
-    </div>
+        Growth
+        <!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML-->
+        <div id="bar-chart">
+            <div class="bar" data-year="2020" style="--height: 30%;"></div>
+            <div class="bar" data-year="2021" style="--height: 50%;"></div>
+            <div class="bar" data-year="2022" style="--height: 70%;"></div>
+            <div class="bar" data-year="2023" style="--height: 85%;"></div>
+            <div class="bar" data-year="2024" style="--height: 100%;"></div>
+        </div>
 
-    Contact Us
-    Want to take your business to the next level? Get in touch with our elite team today.
+        Contact Us
+        Want to take your business to the next level? Get in touch with our elite team today.
 
-    Full Name
+        Full Name
 
-    Email Address
+        Email Address
 
-    Company Name
+        Company Name
 
-    Industry
+        Industry
 
-    How can we help you?
+        How can we help you?
 
-    Submit
+        Submit
 
-    2025 Vanguard. All rights reserved.
-    Email: info@vanguard.com
-    Phone: 480.123.4567
+        2025 Vanguard. All rights reserved.
+        Email: info@vanguard.com
+        Phone: 480.123.4567

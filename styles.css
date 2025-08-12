@@ -1,4 +1,4 @@
-/* CSS BY YOUR NAME */
+/* CSS BY Andrew Soria */
 
 /* IMPORTED FONTS*/
 /* IMPORT "INTER" FROM GOOGLE FONTS"
@@ -53,18 +53,32 @@ table {
 }
 
 /* ROOT VARIABLES */
-:root {
-    --blue: #007BFF;
-    --red: #FF4500;
-    --white: #EAEAEA;
-    --black: #000000;
-    --charcoal: #333333;
-    --font: "Inter", sans-serif;
+:root{
+  --blue:#007BFF;
+  --blue-600:#0a66ff;
+  --red:#FF4500;
+  --white:#EAEAEA;
+  --ink:#111216;
+  --black:#000;
+  --charcoal:#333;
+  --card:#0e57ff;
+  --bg:#0a0d12;
+  --panel:#10151d;
+  --muted:#9aa4b2;
+  --radius:14px;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+  --font:"Inter",sans-serif;
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
+html, body { height:100%; }
+body{
+  background: var(--bg);
+  color: var(--white);
+  font-family: var(--font);
+  min-width: 400px; /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
+}
 
-/* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
@@ -74,7 +88,7 @@ table {
 }
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
- {
+.hero {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;

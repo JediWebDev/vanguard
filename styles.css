@@ -8,107 +8,30 @@
 v2.0 | 20110126
 License: none (public domain)
 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
 }
 body {
   line-height: 1;
@@ -224,6 +147,23 @@ body {
   0%,100%{ transform:translateY(-50%) translateY(0); }
   50%{ transform:translateY(-50%) translateY(-6px); }
 }
+
+/* Mobile nav */
+.nav-toggle{ display:none; }
+.hamburger{ margin-left:auto; cursor:pointer; display:grid; place-items:center; width:42px; height:42px; border-radius:8px; }
+.hamburger svg rect{ fill:#cfe1ff; transition:transform .3s ease, opacity .3s ease; }
+.main-nav{ display:none; position:absolute; top:64px; left:0; right:0; background:#0b1018; border-bottom:1px solid rgba(255,255,255,.05); }
+.main-nav ul{ display:grid; gap:.25rem; padding:.75rem .95rem; }
+.main-nav a{ color:#cfe1ff; text-decoration:none; font-weight:600; padding:.75rem .5rem; display:block; border-radius:10px; }
+.main-nav a:hover{ background:rgba(0,123,255,.12); }
+
+/* Toggle open state */
+.nav-toggle:checked ~ .hamburger svg rect:nth-child(1){ transform:translateY(5px) rotate(45deg); }
+.nav-toggle:checked ~ .hamburger svg rect:nth-child(2){ opacity:0; }
+.nav-toggle:checked ~ .hamburger svg rect:nth-child(3){ transform:translateY(-5px) rotate(-45deg); }
+.nav-toggle:checked ~ .main-nav{ display:block; }
+
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
   display: grid;
